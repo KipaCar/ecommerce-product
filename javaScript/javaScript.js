@@ -106,6 +106,7 @@ let marcoPrincipal = document.querySelector(".marco img");
 //////////////
 function showImagePrincipal(index) {
   marcoPrincipal.src = thumbnailsPrincipal[index].src;
+  return;
 }
 
 // Evento de clic en las miniaturas
@@ -149,6 +150,7 @@ let rightArrow = document.querySelector(".right");
 // Muestra la imagen seleccionada en la imagen grande
 function showImage(index) {
   mainImage.src = thumbnails[index].src;
+  return;
 }
 
 // Evento de clic en las miniaturas
