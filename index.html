@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="cabecera__container">
+      <div class="cabecera__logo">
+        <img id="hamburguesa" class="cabecera__hamburguesa" src="images/icon-menu.svg">
+        <h1><img src="images/logo.svg" alt=""></h1>
+        <nav class="cabecera__navbar__menu">
+
+          <li class="cabecera__navbar__menu--link"><a href="">Collections</a></li>
+          <li class="cabecera__navbar__menu--link"><a href="">Men</a></li>
+          <li class="cabecera__navbar__menu--link"><a href="">Women</a></li>
+          <li class="cabecera__navbar__menu--link"><a href="">About</a></li>
+          <li class="cabecera__navbar__menu--link"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cabecera__iconos">
+        <!-- <input type="radio" id="show">-->
+        <img id="icono-carrito" class="cabecera__iconos--cart" src="images/icon-cart.svg" alt="" />
+        <div id="carrito" class="carrito">0</div>
+        <div id="cabecera__dropdown" class="cabecera__dropdown">
+          <h6 class="cabecera__dropdown__tittle">Cart</h6>
+          <p id="cabecera__dropdown__text" class="cabecera__dropdown__text">Your cart is empty.</p>
+          <div id="nuevo-producto" class="nuevo-producto">
+            <div class="nuevo-producto__info">
+              <img class="nuevo-producto__img" src="/images/image-product-1-thumbnail.jpg" alt="">
+              <div>
+                <h5>Fall Limited Edition Sneakers</h5>
+                <div class="nuevo-producto__price">
+                  <p>$125.00 x</p>
+                  <p id="numero-producto">0</p>
+                  <p id="precio-total" class="precio-total">$0</p><img id="papelera" class="nuevo-producto__papelera"
+                    src="images/icon-delete.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <button id="boton-checkout" class="container__info__button button-checkout">Checkout</button>
+          </div>
+        </div>
+        <img class="cabecera__iconos--avatar" src="images/image-avatar.png" alt="">
+      </div>
+    </div>
+    <nav id="cabecera__responsive" class="cabecera__responsive">
+      <ul id="cabecera__responsive__menu" class="cabecera__responsive__menu">
+        <img id="cabecera__responsive__close" class="cabecera__responsive__close" src="images/icon-close-black.svg"
+          alt="">
+        <li class="cabecera__responsive__menu--link"><a href="">Collections</a></li>
+        <li class="cabecera__responsive__menu--link"><a href="">Men</a></li>
+        <li class="cabecera__responsive__menu--link"><a href="">Women</a></li>
+        <li class="cabecera__responsive__menu--link"><a href="">About</a></li>
+        <li class="cabecera__responsive__menu--link"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container" id="container">
+    <div class="container__carrusel">
+      <div class="marco" id="marco">
+        <img id="img-quitar" class="img-general" src="images/image-product-1.jpg">
+      </div>
+      <div class="container__carrusel__thumbnail">
+        <img id="1" class="container__carrusel__thumbnail__img" src="/images/image-product-1.jpg" alt="">
+        <img id="2" class="container__carrusel__thumbnail__img" src="images/image-product-2.jpg" alt="">
+        <img id="3" class="container__carrusel__thumbnail__img" src="images/image-product-3.jpg" alt="">
+        <img id="4" class="container__carrusel__thumbnail__img" src="images/image-product-4.jpg" alt="">
+      </div>
+      <div class="navigation-principal" id="navigation-principal">
+
+        <img class="arrow-left-principal" src="images/icon-previous.svg" alt="">
+
+        <img class="arrow-right-principal" src="images/icon-next.svg" alt="">
+      </div>
+    </div>
+    <section class="container__info">
+      <h6 class="container__info__model"> Sneaker Company</h6>
+      <h2 class="container__info__title"> Fall Limited Edition Sneakers</h2>
+      <p class="container__info__text"> These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="container__info__amounts">
+        <div>
+          <span class="container__info__price">$125.00</span>
+          <span class="container__info__discount">50%</span>
+        </div>
+        <span class="container__info__previous">$250.00</span>
+      </div>
+      <div class="container__info__wrapper">
+        <div id="container__info__buttons" class="container__info__buttons">
+          <span min-value="0" id="menos" href="" class="container__info__minus mas"><img
+              src="images/icon-minus.svg" /></span>
+          <p id="cantidad" class="container__info__input cantidad">0</p>
+          <span id="mas" href="" class="container__info__plus menos"><img src="images/icon-plus.svg" /></span>
+        </div>
+        <button id="boton-añadir" class="container__info__button"><img src="images/icon-cart-white.svg" />Add to
+          cart</button>
+      </div>
+    </section>
+  </main>
+  <!--  -->
+  <div class="gallery" id="gallery">
+    <div class="gallery-main">
+      <img id="cerrar" class="overlay__carreousel__close" src="images/icon-close.svg" />
+      <div class="main-image">
+        <img class="img-general" src="images/image-product-1.jpg">
+      </div>
+      <div class="thumbnails">
+        <img class="thumbnail" src="/images/image-product-1.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-2.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-3.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-4.jpg" alt="">
+      </div>
+      <div class="navigation">
+        <img class="arrow left" src="images/icon-previous.svg" alt="">
+        <img class="arrow right" src="images/icon-next.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="javaScript/javaScript.js"></script>
+
+</body>
+
+</html>
